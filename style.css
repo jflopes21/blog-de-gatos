@@ -47,7 +47,8 @@ header input {
     background: var(--bg-input);
     color: #FFFFFF;
     border: none;
-    line-height: 100%
+    line-height: 100%;
+    font-size: 1.4rem;
 }
 
 header input::placeholder {
@@ -70,7 +71,6 @@ header input::placeholder {
     padding: 3.1rem 2.6rem 3.4rem 2.2rem ;
     display: flex;
     flex-direction: column;
-    gap: 3.1rem;
 }
 
 main img {
