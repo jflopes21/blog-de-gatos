@@ -49,6 +49,7 @@ header input {
     border: none;
     line-height: 100%;
     font-size: 1.4rem;
+    width: 24.1rem;
 }
 
 header input::placeholder {
@@ -67,8 +68,8 @@ header input::placeholder {
     border-width: 0;
 }
 
-.content{
-    padding: 3.1rem 2.6rem 3.4rem 2.2rem ;
+.content {
+    padding: 3.1rem 2.6rem 3.4rem 2.2rem;
     display: flex;
     flex-direction: column;
 }
@@ -99,7 +100,7 @@ main h1 {
     justify-content: center;
 }
 
-.title .action-buttons{
+.title .action-buttons {
     display: flex;
     gap: 1.2rem;
 }
@@ -126,7 +127,7 @@ main h1 {
     display: flex;
     flex-direction: column;
     gap: 3.2rem;
-    padding: 0rem 2.6rem 3.4rem 2.2rem ;
+    padding: 0rem 2.6rem 3.4rem 2.2rem;
 }
 
 .article {
@@ -170,4 +171,127 @@ footer {
     height: 6.4rem;
     flex-shrink: 0;
     color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+
+    main h1 {
+        font-size: 2.8rem;
+    }
+
+    main img {
+        border-radius: 0%;
+    }
+
+    .title .action-buttons button {
+        width: 5rem;
+    }
+
+    .content p {
+        width: 70.2rem;
+        font-size: 1.8rem;
+        white-space: pre-line;
+    }
+
+    header input {
+        width: 45rem;
+    }
+
+    .related-articles h2 {
+        font-size: 2.4rem;
+    }
+
+    .article-content h3 {
+        line-height: 160%;
+        font-size: 2.2rem;
+    }
+
+    .article-content p {
+        line-height: 160%;
+        font-size: 1.7rem;
+        width: 30rem;
+    }
+
+    .article a img {
+        object-fit: cover;
+        border-radius: 5%;
+    }
+
+}
+
+@media (min-width: 1440px) {
+
+    body {
+        background: var(--bg-default-web);
+    }
+    
+    .screen {
+        display: flex;
+    }
+
+    header {
+        justify-content: space-around;
+        gap: 0rem;
+    }
+
+    header input {
+        width: 108.3rem;
+    }
+
+    main {
+        padding: 4.4rem 3.4rem 3.9rem 11.2rem;
+    }
+
+    main img {
+        width: 80.3rem;
+        border-radius: 10px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: row;
+        width: 80rem;
+        justify-content: flex-start;
+        gap: 30rem;
+    }
+
+    .title .action-buttons {
+        gap: 5rem;
+    }
+
+    .title .action-buttons button img{
+        width: 4rem;
+    }
+
+    .content p {
+        width: 80rem;
+        font-size: 1.6rem;
+        white-space: pre-line;
+    }
+    
+    .related-articles h2 {
+        padding-top: 4.4rem;
+        padding-right: 3.4rem;
+    }
+
+    .article-content h3 {
+        line-height: 160%;
+        font-size: 1.8rem;
+    }
+
+    .article-content p {
+        font-size: 1.4rem;
+        width: 21.5rem;
+    }
+
+    .title .action-buttons button {
+        width: 0.5rem;
+    }
+
+    .content {
+        padding: 3.1rem 0rem 3.4rem 0em;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
